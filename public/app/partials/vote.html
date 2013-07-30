@@ -1,0 +1,33 @@
+<div id="msger"></div>
+<div class="row-fluid well">
+	<form>
+		<fieldset>
+			<legend>新增球队</legend>
+			<input id="name" type="text" placeholder="请输入队名…"
+			       style="width:100px;height:24px;">
+			<input id="link" type="text" placeholder="请输入队服链接…"
+			       style="width:400px;height:24px;">
+
+			<div>
+				<button type="button" ng-click="submitTeam()" class="btn">Submit
+				</button>
+			</div>
+		</fieldset>
+	</form>
+</div>
+
+<legend>球队投票</legend>
+
+<div ng-repeat="team in teams" id="{{team.name}}" class="row-fluid well">
+	<input type="text" disabled=true id="{{team.name}}Count"
+	       value="{{team.count}}"
+	       style="width:24px;height:24px;margin-bottom: 0;font-size: 24px;color:#34495E;">
+	<button type="button" id="{{team.name}}Add" ng-click="teamAdd(team.name)"
+	        class="btn">+
+	</button>
+	<button type="button" id="{{team.name}}Reduce" ng-click="teamReduce(team.name)"
+	        class="btn">-
+	</button>
+	<span>{{team.name}}</span>
+	<a href="http://baidu.com">http://baidu.com</a>
+</div>

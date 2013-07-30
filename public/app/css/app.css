@@ -1,0 +1,25 @@
+/*-----------------global start-----------------*/
+body {
+	font-family: "georgia", "Lato", "sans-serif", "Microsoft YaHei";
+	font-size: 15px;
+}
+
+.navbar .nav > li > a {
+	font-size: 17px;
+}
+
+/*-----------------global end-----------------*/
+/*-----------------login user start-----------------*/
+.login-container {
+	font-size: 24px;
+	margin: 0 auto;
+	margin-top: 200px;
+	width: 400px;
+	height: 200px;
+}
+/*-----------------login user end-----------------*/
+/*-----------------vote start-----------------*/
+
+/*-----------------vote end-----------------*/
+
+/******************style for components******************/
